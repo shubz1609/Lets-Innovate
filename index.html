@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Let's Innovate </title>
+</head>
+
+<body>
+    <header>
+        <div style="align-items: center;">
+            <div>
+                <img src="./logo.png" style="border-radius: 25px; height: 100px;" />
+            </div>
+            <div style="font-family: OpenSans, Arial, Helvetica, sans-serif;">
+                <h1>Let's <span style="color: #0179cc;">Innovate!</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="wellness-section">
+        <h2>Track Your Wellness</h2>
+        <div>
+            <label for="water-intake">Water Intake (ml):</label>
+            <input type="number" id="water-intake" min="0">
+        </div>
+        <div>
+            <label for="steps-count">Steps Count:</label>
+            <input type="number" id="steps-count" min="0">
+        </div>
+        <div>
+            <label for="sleep-hours">Sleep Hours:</label>
+            <input type="number" id="sleep-hours" min="0">
+        </div>
+        <button onclick="recordWellness()">Record Wellness</button>
+    </section>
+
+    <section id="medicine-section">
+        <h2>Medicine Reminder</h2>
+        <label for="medicine-name">Medicine Name:</label>
+        <input type="text" id="medicine-name">
+        <label for="medicine-time">Reminder Time:</label>
+        <input type="time" id="medicine-time">
+        <button onclick="setMedicineReminder()">Set Reminder</button>
+    </section>
+
+    
+    <section id="emergency-contact-section">
+        <h2>Emergency Contact</h2>
+        <label for="emergency-contact">Emergency Contact Number:</label>
+        <input type="tel" id="emergency-contact" placeholder="Enter contact number">
+        <button onclick="saveEmergencyContact()">Save Contact</button>
+    </section>
+
+    <section id="emergency-section">
+        <h2>Emergency Alert</h2>
+        <button onclick="triggerEmergencyAlert()">Emergency Alert</button>
+    </section>
+
+    <section id="summary-section">
+        <h2>Wellness Summary</h2>
+        <p id="water-summary">Water Intake: 0 ml</p>
+        <p id="steps-summary">Steps Count: 0</p>
+        <p id="sleep-summary">Sleep Hours: 0</p>
+    </section>
+
+
+    <footer>
+        <p>Let's Innovate</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
